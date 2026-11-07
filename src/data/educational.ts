@@ -1,0 +1,118 @@
+import { EducationalGuide } from '../types/legal';
+
+export const EDUCATIONAL_GUIDES: EducationalGuide[] = [
+  {
+    id: 'new-criminal-laws-2024',
+    title: 'India’s New Criminal Laws: BNS, BNSS & BSA Explained in Simple Language',
+    category: 'Criminal Law',
+    readingTime: '5 min read',
+    summary: 'A plain-language breakdown of the major changes introduced by Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA) replacing the IPC, CrPC, and Evidence Act.',
+    keyTakeaways: [
+      'Zero FIR can now be lodged at any police station across India, regardless of jurisdiction.',
+      'Electronic summons and virtual witness testimonies are officially recognized.',
+      'Strict statutory timelines have been mandated for police investigations and delivery of judgments.',
+      'Community service has been introduced as a punishment for minor first-time offences.',
+    ],
+    legalProvisions: ['Bharatiya Nyaya Sanhita 2023', 'Section 173 BNSS (Zero FIR)', 'Section 23 BNS (Community Service)'],
+    contentParagraphs: [
+      'On 1st July 2024, India implemented three monumental criminal codes: the Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA). These laws repealed the century-old Indian Penal Code (1860), Code of Criminal Procedure (1973), and Indian Evidence Act (1872).',
+      'For the ordinary citizen, the most impactful change is the statutory mandate for "Zero FIR". Under Section 173 of the BNSS, an individual can report a cognizable crime at any police station in India, even if the offence occurred outside that police station\'s territory. The police officer cannot refuse registration on territorial grounds.',
+      'Additionally, digital forensic evidence collection is now mandatory for severe offences carrying sentences of seven years or more, ensuring greater transparency during police search and seizure procedures.',
+    ],
+  },
+  {
+    id: 'cheque-bounce-guide-138',
+    title: 'What to Do When a Cheque Bounces: 30-Day Mandatory Statutory Checklist',
+    category: 'Banking & Financial',
+    readingTime: '4 min read',
+    summary: 'Step-by-step guidance on how to preserve your legal rights under Section 138 of the Negotiable Instruments Act without missing the strict limitation period.',
+    keyTakeaways: [
+      'Collect the original cheque and the Bank Return Memo immediately upon dishonour.',
+      'A formal demand notice must be dispatched within 30 days from receiving the bank return memo.',
+      'The drawer is granted a statutory 15-day period from the date of notice receipt to pay.',
+      'If payment is not made within 15 days, you have exactly 30 days to file a complaint in the Magistrate Court.',
+    ],
+    legalProvisions: ['Section 138 Negotiable Instruments Act 1881', 'Section 142 NI Act (Limitation)', 'Section 143A (Interim Compensation up to 20%)'],
+    contentParagraphs: [
+      'A bounced cheque is both a civil liability and a criminal offence in India under Section 138 of the Negotiable Instruments Act, 1881. However, thousands of legitimate claims fail every year solely because of delayed action.',
+      'The law requires that the formal demand notice be issued within exactly 30 calendar days of receiving the Bank Return Memo. If you dispatch the notice on day 31, your criminal complaint under Section 138 may be dismissed.',
+      'The demand notice must be sent via Registered Post A.D. or Speed Post, and the postal tracking receipt must be preserved as primary evidence of dispatch.',
+    ],
+  },
+  {
+    id: 'received-legal-notice-checklist',
+    title: 'Received a Legal Notice? Five Critical Steps You Must Take Immediately',
+    category: 'Legal Notice Guides',
+    readingTime: '4 min read',
+    summary: 'Do not panic or ignore a received legal notice. Learn how to verify its authenticity, calculate your response deadline, and prepare a factual rebuttal.',
+    keyTakeaways: [
+      'Preserve the postal envelope showing the date and postal stamp of delivery.',
+      'Never ignore a legal notice—uncontested statements may be used against you as admission in court.',
+      'Calculate the response period (typically 15 or 30 days) from the date of receipt, not the date written on the letter.',
+      'Consult an enrolled advocate before sending any written reply or WhatsApp message to the sender.',
+    ],
+    legalProvisions: ['Section 80 Code of Civil Procedure (for government notices)', 'Doctrine of Non-Traverse / Admission'],
+    contentParagraphs: [
+      'Receiving a legal notice can be unsettling, but it is not a court summons or an arrest warrant. A legal notice is a formal written warning issued by an advocate on behalf of a client, detailing their grievances and demanding resolution before instituting court proceedings.',
+      'The most critical step upon receipt is preserving the original postal envelope. The date stamped on the envelope establishes the official date of delivery, which determines your response window.',
+      'Do not rush to phone or confront the sender in anger. Emotional or unverified statements can inadvertently concede liability. Consult an advocate to assess whether the claims have legal merit and draft a factual, structured reply.',
+    ],
+  },
+  {
+    id: 'property-title-verification-guide',
+    title: 'Property Title Verification: How to Check Land & Flat Ownership Before Buying',
+    category: 'Property Law',
+    readingTime: '6 min read',
+    summary: 'The essential due diligence checklist every home buyer and investor must conduct to avoid fraudulent sellers and disputed land in India.',
+    keyTakeaways: [
+      'Trace the chain of title deeds (Title Flow) for at least 30 consecutive years.',
+      'Obtain an Encumbrance Certificate (EC) from the Sub-Registrar\'s office.',
+      'Check local development authority approvals (e.g. DDA, BDA, MMRDA) and RERA project registration.',
+      'Verify municipal tax receipts, mutation extracts (Khata / Patta), and layout sanctions.',
+    ],
+    legalProvisions: ['Transfer of Property Act 1882', 'Registration Act 1908', 'Real Estate (Regulation and Development) Act 2016 (RERA)'],
+    contentParagraphs: [
+      'Buying property is often the largest financial commitment of a person\'s life. In India, "caveat emptor" (buyer beware) strictly applies to real estate transactions. The burden is entirely on the buyer to ensure the seller holds an unencumbered, marketable title.',
+      'A thorough title search examines the chain of title for at least thirty years to verify that every transfer was supported by registered deeds, proper consideration, and valid inheritance documents.',
+      'For under-construction residential projects, verifying RERA registration on the official state RERA portal is mandatory. Never invest in projects lacking verified RERA numbers and sanctioned building plans.',
+    ],
+  },
+  {
+    id: 'cybercrime-golden-hour-reporting',
+    title: 'Cyber Financial Fraud: The Golden Hour Guide to Freezing Stolen Funds',
+    category: 'Cyber Crime',
+    readingTime: '4 min read',
+    summary: 'What to do within the first 1 to 2 hours of falling victim to an unauthorized bank transfer, UPI scam, or credit card fraud.',
+    keyTakeaways: [
+      'Immediately dial 1930 (National Cyber Crime Helpline) or visit cybercrime.gov.in.',
+      'Call your bank\'s 24/7 fraud reporting helpline to block the account and card.',
+      'Provide the transaction UTR number, beneficiary account details, and exact timestamp.',
+      'File an e-FIR on the National Cyber Crime Reporting Portal within 24 hours.',
+    ],
+    legalProvisions: ['Section 66D Information Technology Act 2000', 'RBI Circular on Customer Liability in Unauthorised Electronic Banking Transactions'],
+    contentParagraphs: [
+      'When an unauthorized transaction occurs, time is of the essence. The first 1 to 2 hours following the fraud are known in cybersecurity law as the "Golden Hour". During this window, stolen funds are often queued in intermediate wallets or mule accounts before being withdrawn at ATMs.',
+      'Dialing 1930 connects you with the Citizen Financial Cyber Fraud Reporting and Management System (CFCFRMS), where automated alerts are dispatched to beneficiary banks to freeze the siphoned amount before it is cashed out.',
+      'Under Reserve Bank of India (RBI) guidelines, if you notify your bank of unauthorized transactions within three working days, your zero-liability protection applies.',
+    ],
+  },
+  {
+    id: 'mutual-consent-divorce-process',
+    title: 'Mutual Consent Divorce in India: Requirements, Timeline & Cooling-Off Period',
+    category: 'Divorce & Family',
+    readingTime: '5 min read',
+    summary: 'A clear guide to the Section 13B mutual consent divorce procedure under the Hindu Marriage Act and Special Marriage Act.',
+    keyTakeaways: [
+      'Parties must have lived separately for at least one continuous year.',
+      'All issues of permanent alimony, return of Stridhan, and child custody must be settled in writing.',
+      'First Motion and Second Motion are filed with an initial 6-month statutory waiting period.',
+      'The Supreme Court allows the 6-month cooling-off period to be waived under genuine conditions (Amardeep Singh v. Harveen Kaur).',
+    ],
+    legalProvisions: ['Section 13B Hindu Marriage Act 1955', 'Section 28 Special Marriage Act 1954', 'Article 142 Constitution of India'],
+    contentParagraphs: [
+      'Mutual consent divorce is the most dignified, cost-effective, and expedient route to legally dissolve a marriage in India. Both parties jointly petition the Family Court, affirming that they can no longer live together as husband and wife.',
+      'Before filing, a comprehensive Settlement Agreement must be executed detailing the division of matrimonial assets, permanent alimony, and visitation or custody of minor children.',
+      'While the statute prescribes a 6-month cooling-off period between the First Motion and Second Motion, courts have discretionary power to waive this period if all mediation efforts have failed and prolonged litigation causes hardship.',
+    ],
+  },
+];

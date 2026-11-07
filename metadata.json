@@ -1,0 +1,6 @@
+{
+  "name": "RAOZ LEGAL – Online Legal Assistance Platform",
+  "description": "India's trusted legal assistance platform for advocate consultation, legal notices, property disputes, criminal law help, and documentation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
