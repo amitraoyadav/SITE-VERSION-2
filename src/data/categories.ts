@@ -10,6 +10,11 @@ export interface Category {
 }
 
 export const INITIAL_CATEGORIES: Category[] = [
+  {
+    id: 'cat-legal-advocate',
+    name: 'Legal & Advocate',
+    description: 'Anonymous online lawyer consultation, verified advocates, legal services, and case assistance platforms'
+  },
   { 
     id: 'cat-law-firms', 
     name: 'Law Firms', 
@@ -43,8 +48,14 @@ export function getStoredCategories(): Category[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY_CATEGORIES);
     if (raw) {
-      const parsed = JSON.parse(raw);
+      const parsed: Category[] = JSON.parse(raw);
       if (Array.isArray(parsed) && parsed.length > 0) {
+        const hasLegalAdvocate = parsed.some(
+          (c) => c.name.toLowerCase() === 'legal & advocate'
+        );
+        if (!hasLegalAdvocate) {
+          return [INITIAL_CATEGORIES[0], ...parsed];
+        }
         return parsed;
       }
     }

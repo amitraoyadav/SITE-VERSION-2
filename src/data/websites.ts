@@ -46,17 +46,46 @@ export const INITIAL_WEBSITES: WebsiteRecord[] = [
     version: '1.0.0',
     tags: ['Law Firms', 'Legal Documents', 'Rocket Lawyer Recreation', 'Business Incorporation'],
   },
+  {
+    id: 'website-003',
+    name: 'Legal Platform',
+    referenceUrl: 'https://www.legalplatform.co/web/',
+    category: 'Legal & Advocate',
+    description: "India's #1 Anonymous Legal Consultation Platform (VakeelSaab recreation). Connect anonymously with 4,000+ verified lawyers online or offline across 18+ practice areas with 3-minute trial, Document Store, and stage-wise billing.",
+    prompt: 'Recreate Legal Platform (https://www.legalplatform.co/web/) from the uploaded VakeelSaab ZIP archive under the Legal & Advocate category. Preserve all original pages, design, images, SVG icons, text, fonts, and interactive functionality.',
+    createdAt: '2026-11-07',
+    status: 'ready',
+    hasCustomModule: true,
+    version: '1.0.0',
+    tags: ['Legal & Advocate', 'Legal Platform', 'Anonymous Consultation', 'VakeelSaab'],
+  },
 ];
 
 const STORAGE_KEY_WEBSITES = 'raoz_site_websites_v2';
 
 export function getStoredWebsites(): WebsiteRecord[] {
+  const legalPlatformEntry = INITIAL_WEBSITES.find((w) => w.id === 'website-003')!;
   try {
     const raw = localStorage.getItem(STORAGE_KEY_WEBSITES);
     if (raw) {
-      const parsed = JSON.parse(raw);
+      const parsed: WebsiteRecord[] = JSON.parse(raw);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        return parsed;
+        const existingIdx = parsed.findIndex(
+          (w) =>
+            w.id === 'website-003' ||
+            w.name.toLowerCase() === 'legal platform' ||
+            w.referenceUrl === 'https://www.legalplatform.co/web/'
+        );
+        if (existingIdx !== -1) {
+          const updated = [...parsed];
+          updated[existingIdx] = {
+            ...updated[existingIdx],
+            ...legalPlatformEntry,
+            id: 'website-003',
+          };
+          return updated;
+        }
+        return [legalPlatformEntry, ...parsed];
       }
     }
   } catch (err) {

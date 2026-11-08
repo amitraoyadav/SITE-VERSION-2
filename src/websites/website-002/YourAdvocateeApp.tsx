@@ -147,12 +147,17 @@ export default function YourAdvocateeApp({
         isOpen={docBuilderOpen}
         onClose={() => setDocBuilderOpen(false)}
         initialTemplateId={selectedDocTemplate}
+        onOpenAdvocateSign={(docTitle) => {
+          setDocBuilderOpen(false);
+          handleOpenSignModal(docTitle);
+        }}
       />
 
       <BusinessFormationModal
         isOpen={bizModalOpen}
         onClose={() => setBizModalOpen(false)}
         initialEntityType={selectedBizType}
+        onSubmitted={() => {}}
       />
 
       <AdvocateSignModal

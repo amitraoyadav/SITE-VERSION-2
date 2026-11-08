@@ -158,13 +158,18 @@ export function CategoriesPage({
                       {categoryWebsites.map((site) => (
                         <li
                           key={site.id}
-                          className="flex items-center justify-between text-xs py-1 px-2 rounded-md hover:bg-neutral-800/60 group"
+                          onClick={() => onOpenWebsite(site)}
+                          className="flex items-center justify-between text-xs py-1.5 px-2.5 rounded-md hover:bg-neutral-800/60 group cursor-pointer transition-colors"
                         >
-                          <span className="text-neutral-300 group-hover:text-white font-medium">
+                          <span className="text-neutral-300 group-hover:text-white font-medium underline-offset-2 group-hover:underline">
                             {site.name}
                           </span>
                           <button
-                            onClick={() => onOpenWebsite(site)}
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onOpenWebsite(site);
+                            }}
                             className="text-[11px] text-neutral-400 group-hover:text-white flex items-center gap-1 cursor-pointer"
                           >
                             <span>Open</span>

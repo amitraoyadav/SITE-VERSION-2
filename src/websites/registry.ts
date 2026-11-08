@@ -18,8 +18,7 @@ export const WEBSITE_MODULE_REGISTRY: Record<
 > = {
   'website-001': lazy(() => import('./website-001/index.tsx')),
   'website-002': lazy(() => import('./website-002/index.tsx')),
-  // Additional websites added in subsequent turns are registered here:
-  // 'website-003': lazy(() => import('./website-003/index.tsx')),
+  'website-003': lazy(() => import('./website-003/index.tsx')),
 };
 
 /**

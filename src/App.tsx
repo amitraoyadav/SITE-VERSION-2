@@ -20,8 +20,8 @@ import { IntegrationModal } from './components/Dashboard/IntegrationModal';
 import { WebsiteViewer } from './components/Viewer/WebsiteViewer';
 
 export default function App() {
-  // Primary view mode: Defaults to the newly built RAOZ LEGAL platform
-  const [appMode, setAppMode] = useState<'raoz-legal' | 'library-dashboard'>('raoz-legal');
+  // Primary view mode: Defaults to RAOZ SITE Library III dashboard
+  const [appMode, setAppMode] = useState<'raoz-legal' | 'library-dashboard'>('library-dashboard');
 
   // Library State (for future integration and collection management)
   const [websites, setWebsites] = useState<WebsiteRecord[]>(() => getStoredWebsites());
